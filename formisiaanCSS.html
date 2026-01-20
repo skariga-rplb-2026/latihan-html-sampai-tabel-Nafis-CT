@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>FORM ISIAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color:rgb(36, 92, 71)">FORM ISIAN</h3> <br>
+
+    <table>
+    <tr>
+        <td>Nama Depan</td>   
+        <td><input type="text" name="first_name" size="50"></td>
+    </tr>
+    
+    <tr>
+        <td>Nama Belakang</td>   
+        <td><input type="text" name="last_name" size="50"></td>
+    </tr>
+
+    <tr>
+        <td>Alamat</td>   
+        <td><textarea  name="alamat" cols="90" rows="6"></textarea></td>
+    </tr>
+
+    <tr>
+        <td>Tanggal Lahir</td>   
+        <td> <input type="date" size="50"> </td>
+    </tr>
+
+    <tr>
+        <td>Berat Badan, Tinggi Badan</td>   
+        <td> <input type="number" name="kg" size="50"> kg <br> <input type="number" name="cm" size="50"> cm </td>
+        
+        
+    </tr>
+
+    <tr>
+        <td>Warna Faavorit</td>   
+        <td> <input type="color" name="warna" value="#ff0000" size="50">  </td>
+    </tr>
+
+    <tr>
+         <td>Username</td>   
+        <td><input type="text" name="user" size="50"></td>
+    </tr>
+
+    <tr>
+         <td>Password</td>   
+        <td><input type="password" name="pass" size="50"></td>
+    </tr>
+
+    <tr>
+        <td>Hobby</td>
+        <td> 
+             <input type="checkbox" name="hobby[]"> Membaca <br>
+             <input type="checkbox" name="hobby[]"> Bersepeda <br>
+             <input type="checkbox" name="hobby[]"> Gaming <br>
+             <input type="checkbox" name="hobby[]"> Berkebun 
+        </td>
+    </tr>
+    
+    <tr>
+        <td>Jenis Kelamin</td>
+        <td> 
+            <input type="radio" name="jenis[]"> Laki-laki <br>
+            <input type="radio" name="jenis[]"> Perempuan 
+        </td>
+    </tr>
+
+    <tr>
+        <td>Kota Asal</td>
+        <td>
+             <select name="kota">
+                <option value="kediri">Kediri</option>
+                <option value="malang">Malang</option>
+                <option value="batu">Batu</option>
+                <option value="surabaya">Surabaya</option>
+                
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Upload Gambar</td>
+
+        <td>
+            <input type="file" > <br>
+            <input type="submit" value="KIRIM DATA" class="btn kirim">
+            <input type="reset" value="RESET" class="btn reset">
+            <input type="button" value="CLICK ME" class="btn klik" onclick="alert('hallo')">
+
+        </td>
+       
+    </tr>
+
+
+
+    </table>
+
+   
+
+</body>
+
+
+</html>
