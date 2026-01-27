@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+body {
+    background-color: #ecf0f1;
+    font-family: arial;
+}
+
+h2 {
+    color: #34495e;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Style untuk Tabel Data */
+.dttabel {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dttabel th {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 10px;
+    border: 1px solid #34495e;
+    text-transform: uppercase;
+}
+
+.dttabel td {
+    padding: 5px;
+    border: 1px solid #bdc3c7;
+    color: #34495e;
+}
+
+.dttabel tr:nth-child(odd) {
+    background-color: #bdc3c7;
+}
+
+.dttabel tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.dttabel tr:hover {
+    background-color: yellow;
+}
+
+/* Style untuk Link */
+a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Style untuk Form (frtabel) */
+.frtabel {
+    background-color: #ecf0f1;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    vertical-align: middle;
+    color: #34495e;
+    margin: auto;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #34495e;
+    background-color: #fff;
+    color: #34495e;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #34495e;
+    color: #ecf0f1;
+    border: 0;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #2c3e50;
+}
