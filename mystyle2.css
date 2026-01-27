@@ -1,20 +1,24 @@
 @charset "utf-8";
 
+/* --- Body Style --- */
 body {
-    background-color: #ecf0f1;
     font-family: arial;
+    background-color: #ecf0f1;
 }
 
+/* --- Header Style --- */
 h2 {
     color: #34495e;
-    font-weight: 600;
+    background-color: #bdc3c7;
+    font-weight: bold;
     letter-spacing: 0.4em;
     margin-bottom: 1em;
     text-transform: uppercase;
     text-align: center;
+    padding: 10px; /* Ditambahkan agar background terlihat rapi */
 }
 
-/* Style untuk Tabel Data */
+/* --- Data Table Style (Tabel Mahasiswa) --- */
 .dttabel {
     border-spacing: 0;
     border-collapse: collapse;
@@ -22,69 +26,159 @@ h2 {
 }
 
 .dttabel th {
-    background-color: #34495e;
+    border-bottom: 1px solid #34495e;
+    border-right: 1px solid #34495e;
+    border-left: 1px solid #34495e;
+    padding: 5px 5px;
     color: #ecf0f1;
-    padding: 10px;
-    border: 1px solid #34495e;
+    background-color: #34495e;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
-.dttabel td {
-    padding: 5px;
-    border: 1px solid #bdc3c7;
-    color: #34495e;
-}
-
 .dttabel tr:nth-child(odd) {
-    background-color: #bdc3c7;
+    height: 25px;
+    /* Warna latar belakang untuk baris ganjil */
 }
 
 .dttabel tr:nth-child(even) {
-    background-color: #ecf0f1;
+    height: 25px;
+    background-color: #bdc3c7; 
 }
 
-.dttabel tr:hover {
-    background-color: yellow;
+/* Hover effect untuk baris tabel */
+.dttabel tbody tr:hover {
+    background: yellow;
 }
 
-/* Style untuk Link */
+.dttabel td:first-child {
+    border-left: 1px solid #34495e;
+}
+
+.dttabel td:last-child {
+    border-right: 1px solid #34495e;
+}
+
+.dttabel tr:last-child {
+    border-bottom: 1px solid #34495e;
+}
+
+/* Pengaturan rata tengah untuk kolom tertentu */
+.dttabel td:nth-child(1),
+.dttabel td:nth-child(2),
+.dttabel td:nth-child(4),
+.dttabel td:nth-child(5),
+.dttabel td:nth-child(8) {
+    text-align: center;
+}
+
+/* --- Link / Button Style --- */
 a {
+    padding: 5px 15px;
+    background-color: #34495e;
     text-decoration: none;
-    color: #34495e;
-    font-weight: bold;
+    border: 0px;
+    color: #ecf0f1;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:visited {
+    color: #ecf0f1;
 }
 
 a:hover {
-    color: red;
+    background-color: #ecf0f1;
+    color: #34495e;
 }
 
-/* Style untuk Form (frtabel) */
+a:active {
+    color: yellow;
+}
+
+/* --- Form Table Style (Tambah Data) --- */
 .frtabel {
     background-color: #ecf0f1;
     border-spacing: 0px;
     border-collapse: collapse;
     vertical-align: middle;
-    color: #34495e;
-    margin: auto;
+    margin: auto; /* Agar form berada di tengah */
 }
 
-input[type="text"], input[type="date"], input[type="tel"], textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #34495e;
-    background-color: #fff;
-    color: #34495e;
-}
-
-input[type="submit"], input[type="reset"] {
-    background-color: #34495e;
+.frtabel caption {
+    padding: 5px 5px;
     color: #ecf0f1;
-    border: 0;
-    padding: 5px 15px;
-    cursor: pointer;
+    background-color: #34495e;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     font-weight: 600;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #2c3e50;
+.frtabel td:nth-child(1) {
+    text-align: right;
+    height: 25px;
+    padding: 5px 10px;
+    color: #34495e;
+    font-weight: 600;
+    border-right: 1px solid #bdc3c7;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.frtabel td:last-child {
+    vertical-align: top;
+    border-bottom: 1px solid #bdc3c7;
+    padding: 5px;
+}
+
+/* --- Form Input Styles --- */
+input[type="text"],
+input[type="date"],
+input[type="Tel"] {
+    border: 0px;
+    height: 25px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #34495e;
+    padding-left: 5px;
+}
+
+input:focus, textarea:focus {
+    background-color: #fff;
+}
+
+textarea {
+    border: 0px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #34495e;
+    height: 100px;
+    padding: 5px;
+}
+
+/* Tombol Proses dan Batal */
+input[type="submit"] {
+    background-color: #34495e;
+    height: 30px;
+    width: 48%;
+    color: #ecf0f1;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+input[type="reset"] {
+    background-color: #34495e;
+    height: 30px;
+    width: 48%;
+    color: #ecf0f1;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    background-color: #bdc3c7;
+    color: #34495e;
 }

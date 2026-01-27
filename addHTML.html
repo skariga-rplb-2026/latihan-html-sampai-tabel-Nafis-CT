@@ -5,54 +5,59 @@
     <link rel="stylesheet" href="mystyle2.css" media="all" />
 </head>
 <body>
-    <h3>TAMBAH DATA MAHASISWA</h3>
-    <table border="0">
-        <form action="tambah.php">
+
+    <h2>DATA MAHASISWA</h2>
+
+    <form action="tambah.php">
+        <table class="frtabel" align="center">
+            <caption>Tambah data Mahasiswa</caption>
+            
             <tr>
                 <td width="140px">No. Induk</td>
-                <td width="10px">:</td>
                 <td><input type="text" name="noinduk" maxlength="12" /></td>
             </tr>
+
             <tr>
                 <td>Nama Mahasiswa</td>
-                <td>:</td>
                 <td><input type="text" name="nama" maxlength="50" /></td>
             </tr>
+
             <tr>
                 <td>JK</td>
-                <td>:</td>
                 <td>
                     <input type="radio" name="jk" value="L" checked /> Laki-laki
                     <input type="radio" name="jk" value="P" /> Perempuan
                 </td>
             </tr>
+
             <tr>
                 <td>Tgl. Lahir</td>
-                <td>:</td>
                 <td><input type="date" name="tgllahir" /></td>
             </tr>
+
             <tr>
                 <td>Alamat</td>
-                <td>:</td>
-                <td><textarea name="alamat" rows="5" cols="30"></textarea></td>
+                <td><textarea name="alamat" cols="30"></textarea></td>
             </tr>
+
             <tr>
                 <td>Dosen Pembimbing</td>
-                <td>:</td>
                 <td><input type="text" name="dosen" maxlength="50" /></td>
             </tr>
+
             <tr>
                 <td>No. Telepon</td>
-                <td>:</td>
                 <td><input type="tel" name="telp" maxlength="50" /></td>
             </tr>
+
             <tr>
-                <td colspan="3">
+                <td colspan="2">
                     <input type="submit" value="Proses" />
                     <input type="reset" value="Batal" />
                 </td>
             </tr>
-        </form>
-    </table>
+        </table>
+    </form>
+
 </body>
 </html>
